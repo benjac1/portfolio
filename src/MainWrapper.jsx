@@ -12,7 +12,7 @@ function MainWrapper(){
                         <div className="cartapro1">
                             <img src="/images/pro1.png" alt="Proyecto1"/>
                             <img src="/images/pro1mobile.png" alt="Proyecto1mobile"/>
-                            <p>Página que enseña a cualquier jugador de valorant el nivel profesional del mismo (o ese seria el fin del proyecto). <b>Click <a href="https://comojugarvalorant.vercel.app">aqui</a> para visitar</b></p>
+                            <p>Página que enseña a cualquier jugador de valorant el nivel profesional del mismo (o ese seria el fin del proyecto). <b><a href="https://comojugarvalorant.vercel.app">Click aquí</a> para visitar</b></p>
                             <p>Hecho a puro HTML y CSS</p>
                         </div>
                     </article>
