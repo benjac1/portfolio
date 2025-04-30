@@ -29,8 +29,8 @@
 .cartapro1{
     position:relative;
     border-radius:7px;
-    color:#fff;
-    background:#37e;
+    color:#000;
+    background:#48f;
     height:500px;width:clamp(300px,100%,600px);
     padding:30px;
 }
@@ -51,7 +51,9 @@
 .cartapro1 a{
     color:#4f4;
 }
-
+ul li{
+    list-style:none;
+}
 
 
 @media (max-width:900px){
