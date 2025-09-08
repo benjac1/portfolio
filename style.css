@@ -115,8 +115,7 @@ body{
 }
 .main article h2{
     font-size:clamp(1.5rem, 4vw, 2.5rem);
-    border-top:2px solid #26e;
-    border-bottom:2px solid #26e;
+    border-left:3px solid blue;
     color:#000;
     margin:0 0 40px 0;
 }
