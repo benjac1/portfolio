@@ -99,7 +99,7 @@ body{
 .main{
     width:clamp(124px,100%,1024px);
     box-shadow:0 0 100px #37d;
-    padding:clamp(10px,100px,150px);
+    padding:clamp(1rem,5vw,3rem);
     background:#ddd;
     text-align:center;
     display:flex;
@@ -111,8 +111,6 @@ body{
     flex-direction:column;
     align-items:center;
     gap:10px;
-    text-align:left;
-    
 }
 .main article h2{
     font-size:clamp(1.5rem, 4vw, 2.5rem);
