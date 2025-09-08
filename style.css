@@ -118,6 +118,7 @@ body{
     color:#000;
     margin:0 0 40px 0;
     padding:0 0 0 25px;
+    text-align:left;
 }
 .main h1{
   opacity:0;
