@@ -114,7 +114,7 @@ body{
 }
 .main article h2{
     font-size:clamp(1.5rem, 4vw, 2.5rem);
-    border-left:3px solid blue;
+    border-left:3px solid var(--aqua-c);
     color:#000;
     margin:0 0 40px 0;
     padding:0 0 0 25px;
