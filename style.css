@@ -121,7 +121,8 @@ body{
     margin:0 0 40px 0;
 }
 .main h1{
-  animation:aparecer-arriba 1s ease-in-out;
+  opacity:0;
+  animation:aparecer-arriba 1s .3s ease-in-out forwards;
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
 .main>h2{
