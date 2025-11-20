@@ -100,6 +100,7 @@ body{
     width:clamp(124px,100%,1024px);
     box-shadow:0 0 100px #37d;
     padding:clamp(1rem,5vw,3rem);
+    padding-top:20dvh;
     background:#ddd;
     text-align:center;
     display:flex;
