@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Benjamín Caballero | Front-End Developer</title>
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://benjacdev.vercel.app; script-src 'self' 'defer'; style-src 'self' 'unsafe-inline';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#0f172a"> <title>Benjamín Caballero | Front-End Web Developer Junior</title>
+    <meta name="description" content="Benjamín Caballero | Front End Web Developer | Portfolio">
+    <link rel="canonical" href="https://benjacdev.vercel.app/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <meta property="og:title" content="Benjamín Caballero | Front-End Web Developer | Portfolio">
+    <meta property="og:description" content="Benjamín Caballero | Front End Web Developer">
+    <meta property="og:image" content="https://benjacdev.vercel.app/logo-bcd.png">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="/favicon-bcd.ico" sizes="any">
+    <link rel="icon" href="/favicon-bcd.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        /* Reset mínimo y variables */
+        :root { color-scheme: light dark; --bg: #ffffff; --text: #1e293b; }
+        @media (prefers-color-scheme: dark) { :root { --bg: #0f172a; --text: #f8fafc; } }
+        
+        body { 
+        margin: 0; 
+        font-family: system-ui, -apple-system, sans-serif; 
+        background-color: var(--bg); 
+        color: var(--text); 
+        display: flex; 
+        flex-direction: column; 
+        min-height: 100vh; /* Base para el sticky footer */
+        }
+        main { flex: 1; } /* Empuja el footer al fondo */
+        
+        /* Contenedor maestro: La única excusa válida para usar un div repetitivo */
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; box-sizing: border-box; }
+        
+        /* Clase maestra de accesibilidad */
+        .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    </style>
+
+    <link rel="stylesheet" href="/css/styles.css" media="print" onload="this.media='all'">
 </head>
 <body>
     <header>
