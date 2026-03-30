@@ -1,0 +1,107 @@
+/* ============================================================
+   RESET MÍNIMO
+   ============================================================ */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%; /* evita que iOS agrande texto al rotar */
+    tab-size: 4;
+}
+
+img, video, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea, select {
+    font: inherit; /* hereda la fuente del body, los navegadores no lo hacen por defecto */
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word; /* evita que texto largo rompa el layout */
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ============================================================
+   VARIABLES
+   ============================================================ */
+:root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --text: #1e293b;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0f172a;
+        --text: #f8fafc;
+    }
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+body {
+    margin: 0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ============================================================
+   CONTENEDOR
+   ============================================================ */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
+/* ============================================================
+   ACCESIBILIDAD
+   ============================================================ */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus visible para navegación por teclado */
+:focus-visible {
+    outline: 2px solid var(--color-green, #10b981);
+    outline-offset: 3px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+}
