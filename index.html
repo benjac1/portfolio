@@ -33,48 +33,52 @@
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
     <link rel="preload" href="assets/img/logo-bcd.webp" as="image">
 
     <style>
-    :root {
-        color-scheme: dark; /* o light dark si soportás los dos */
-        --bg: #ffffff;
-        --text: #1e293b;
-        /* resto de variables */
+    :root{
+        color-scheme:dark;
+        --bg:#ffffff;
+        --text:#1e293b;
     }
 
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --bg: #0d0d0e;
-            --text: #f9fafb;
+    @media(prefers-color-scheme:dark){
+        :root{
+            --bg:#0d0d0e;
+            --text:#f9fafb;
         }
     }
 
-    body {
-        background-color: var(--bg);
-        color: var(--text);
-        font-family: system-ui, sans-serif;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+    body{
+        background-color:var(--bg);
+        color:var(--text);
+        font-family:'Inter',system-ui, sans-serif;
+        display:flex;
+        flex-direction:column;
+        min-height:100vh;
     }
 
-    main { flex: 1; }
+    main{flex:1;}
     </style>
 
-    <link rel="stylesheet" href="assets/css/styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
 </head>
 <body>
     <a href="#main-content" class="skip-link visually-hidden">Saltar al contenido principal</a>
     <header>
-        <img src="logo-bdc.png" alt="Logo de Benjamín Caballero" class="logo">
-        <a href="/" class="logo" aria-label="dev portfolio - inicio">B.C.D</a>
-        <nav aria-label="Menú de navegación principal">
+        <a href="/" class="logo" aria-label="Benjadev portfolio - inicio">
+            Benja<i class="fas fa-code" aria-hidden="true"></i>dev
+        </a>
+        <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="#work">Trabajo</a></li>
                 <li><a href="#stack">Stack</a></li>
@@ -84,15 +88,17 @@
         <a href="#contact" aria-label="ir a sección de contacto">Contacto</a>
     </header>
     <main id="main-content">
-        <section class="hero">
-            <h1>Frontend Web Developer</h1>
-            <p>Desarrollo interfaces modernas con HTML, CSS y JavaScript, trabajando con Astro y React. Especializado en rendimiento, accesibilidad y SEO técnico.</p>
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title" class="hero-title">Frontend Web Developer</h1>
+            <p>Desarrollo interfaces modernas con HTML, CSS y JavaScript, trabajando con Astro y React. Especializado en accesibilidad y SEO técnico.</p>
             <a href="#viewwork" class="btn-1">Ver trabajo</a>
-            <a href="https://github.com/benjac1" target="_blank" rel="noopener" class="btn-2">Github</a>
+            <a href="https://github.com/benjac1" target="_blank" rel="noopener noreferrer" class="btn-2">Github</a>
         </section>
-        <section class="proyects" id="viewwork">
-            <h2>Proyectos Destacados</h2>
-            <article></article>
+        <section class="proyects" id="viewwork" aria-labelledby="proyects-title">
+            <h2 id="proyects-title">Proyectos Destacados</h2>
+            <article aria-labelledby="proyect-1-title">
+                <h3 id="proyect-1-title">Proyecto 1</h3>
+            </article>
         </section>
     </main>
 </body>
