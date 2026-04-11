@@ -102,6 +102,30 @@ body{
 
 
 
-.hero-title{
+.logo{
+    display:flex;
+    align-items:center;
     font-family:var(--font-display);
+    font-weight:1000;
+}
+.logo i{
+    color:var(--color-green);
+    font-size:1.3rem;
+}
+
+.hero-title{
+    display:flex;
+    flex-direction:column;
+    font-family:var(--font-display);
+    font-weight:1000;
+}
+.hero-title span:first-child{
+    color:var(--color-green);
+}
+
+.proyects{
+    /* display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:var(--space-lg); */
+    background:var(--color-green-dim);
 }
