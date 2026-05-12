@@ -30,7 +30,6 @@
 }
 
 html{
-    font-size:16px;
     scroll-behavior:smooth;
     -webkit-text-size-adjust:100%;
     tab-size:4;
@@ -219,11 +218,14 @@ header nav ul li a:hover{
 }
 
 .default-section{
+    margin-top:var(--space-3xl);
+    margin-bottom:var(--space-3xl);
     position:relative;
     border-top:1px solid var(--color-border);
-    padding:var(--space-2xl) var(--space-sm) var(--space-xl);
+    padding:var(--space-2xl) var(--space-sm) var(--space-xs);
     display:flex;
     flex-direction:column;
+    align-items:center;
 }
 .default-section h2{
     font-size:clamp(1.8rem, 3.5vw, 2.5rem);
@@ -302,6 +304,7 @@ header nav ul li a:hover{
     font-family:var(--font-display);
 }
 .project-content>p, .project-content>ul{
+    text-align:justify;
     font-size:clamp(0.85rem, 1.5vw, 0.95rem);
     margin-top:var(--space-xs);
     color:var(--color-text-sub);
@@ -337,10 +340,30 @@ header nav ul li a:hover{
     transition:flex var(--duration) var(--ease);
 }
 .project figure:hover{
-    flex:1.5;
+    flex:2;
 }
 .project figure img{
     width:100%;
     height:100%;
     object-fit:cover;
+}
+
+.simple-section{
+    padding:var(--space-xl);
+}
+.aboutme{
+    gap:var(--space-lg);
+}
+.aboutme p{
+    font-size:clamp(0.9rem, 1.5vw, 1rem);
+    color:var(--color-text-sub);
+    line-height:1.8;
+    text-align:justify;
+    max-width:70ch;
+}
+.aboutme p:last-child{
+    font-size:clamp(0.78rem, 1.2vw, 0.88rem);
+    line-height:1.7;
+    max-width:80ch;
+    opacity:0.7;
 }
