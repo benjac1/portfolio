@@ -304,7 +304,6 @@ header nav ul li a:hover{
     font-family:var(--font-display);
 }
 .project-content>p, .project-content>ul{
-    text-align:justify;
     font-size:clamp(0.85rem, 1.5vw, 0.95rem);
     margin-top:var(--space-xs);
     color:var(--color-text-sub);
@@ -351,19 +350,47 @@ header nav ul li a:hover{
 .simple-section{
     padding:var(--space-xl);
 }
+.simple-section p{
+    font-size:clamp(0.9rem, 1.5vw, 1rem);
+    line-height:1.8;
+    max-width:70ch;
+    color:var(--color-text-sub);
+}
 .aboutme{
     gap:var(--space-lg);
-}
-.aboutme p{
-    font-size:clamp(0.9rem, 1.5vw, 1rem);
-    color:var(--color-text-sub);
-    line-height:1.8;
-    text-align:justify;
-    max-width:70ch;
 }
 .aboutme p:last-child{
     font-size:clamp(0.78rem, 1.2vw, 0.88rem);
     line-height:1.7;
     max-width:80ch;
     opacity:0.7;
+}
+.mindset{
+    gap:var(--space-xl);
+}
+.mindset ul{
+    max-width:80ch;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:var(--space-lg);
+}
+.mindset ul li{
+    background:var(--color-card);
+    padding:var(--space-md);
+    border-radius:var(--radius-md);
+    color:var(--color-text-sub);
+    max-width:100%;
+}
+.mindset ul li:first-child{
+    grid-column:1/-1;
+}
+.mindset ul li strong{
+    display:block;
+    color:var(--color-text);
+    font-family:var(--font-display);
+}
+.mindset ul li strong i{
+    color:var(--color-green);
+    font-size:1.1rem;
+    margin-right:var(--space-xs);
 }
