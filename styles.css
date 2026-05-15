@@ -375,6 +375,8 @@ header nav ul li a:hover{
     gap:var(--space-lg);
 }
 .mindset ul li{
+    font-size:clamp(0.82rem, 1.4vw, 0.92rem);
+    line-height:1.7;
     background:var(--color-card);
     padding:var(--space-md);
     border-radius:var(--radius-md);
@@ -385,6 +387,8 @@ header nav ul li a:hover{
     grid-column:1/-1;
 }
 .mindset ul li strong{
+    margin-bottom:var(--space-xs);
+    font-size:clamp(0.9rem, 1.5vw, 1rem);
     display:block;
     color:var(--color-text);
     font-family:var(--font-display);
@@ -467,4 +471,83 @@ header nav ul li a:hover{
 }
 .perfor{
     color:#F59E0B;
+}
+.prox-obj__container{
+    margin-top:var(--space-xl);
+    display:flex;
+    gap:var(--space-lg);
+}
+.prox-obj__container div{
+    position:relative;
+}
+.prox-obj__container div div{
+    transform:translateY(25px);
+    position:absolute;
+    background:linear-gradient(var(--color-green),var(--color-border),var(--color-bg));
+    width:2px;
+    height:100%;
+}
+.prox-obj__container ul{
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-sm);
+}
+.prox-obj__container ul small{
+    color:var(--color-green);
+    font-size:.62rem;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+.prox-obj__container ul li{
+    font-size:clamp(0.85rem, 1.5vw, 0.95rem);
+    line-height:1.7;
+    max-width:75ch;
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-xs);
+    color:var(--color-text-sub);
+}
+.prox-obj__container ul li strong{
+    font-size:clamp(0.95rem, 1.5vw, 1.05rem);
+    position:relative;
+    color:var(--color-text);
+}
+.prox-obj__container ul li strong::before{
+    content:'';
+    position:absolute;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    border:1px solid var(--color-text-sub);
+    background:var(--color-border);
+    top:6px;
+    left:-46px;
+}
+.prox-obj__container .first-item strong::before{
+    content:'';
+    position:absolute;
+    width:10px;
+    height:10px;
+    border:none;
+    left:-44px;
+    background:var(--color-green);
+    animation:infinite 1.5s opacity;
+    z-index:10;
+    top:7px;
+}
+.first-item strong::after{
+    content:'';
+    position:absolute;
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    border:2px solid var(--color-green);
+    background:var(--color-bg);
+    left:-52px;
+    top:-1px;
+}
+@keyframes opacity{
+    from{opacity:1;}
+    50%{opacity:.4;}
+    to{opacity:1;}
 }
