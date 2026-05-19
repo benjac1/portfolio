@@ -165,6 +165,8 @@ header nav ul li a:hover{
     font-size:1.3rem;
 }
 
+
+
 .hero{
     padding:var(--space-2xl) var(--space-sm) var(--space-xl);
     height:70dvh;
@@ -356,6 +358,7 @@ header nav ul li a:hover{
     max-width:70ch;
     color:var(--color-text-sub);
 }
+
 .aboutme{
     gap:var(--space-lg);
 }
@@ -365,6 +368,7 @@ header nav ul li a:hover{
     max-width:80ch;
     opacity:0.7;
 }
+
 .mindset{
     gap:var(--space-xl);
 }
@@ -381,7 +385,6 @@ header nav ul li a:hover{
     padding:var(--space-md);
     border-radius:var(--radius-md);
     color:var(--color-text-sub);
-    max-width:100%;
 }
 .mindset ul li:first-child{
     grid-column:1/-1;
@@ -398,6 +401,7 @@ header nav ul li a:hover{
     font-size:1.1rem;
     margin-right:var(--space-xs);
 }
+
 .stack ul{
     width:80%;
     display:flex;
@@ -472,6 +476,7 @@ header nav ul li a:hover{
 .perfor{
     color:#F59E0B;
 }
+
 .prox-obj__container{
     margin-top:var(--space-xl);
     display:flex;
@@ -550,4 +555,51 @@ header nav ul li a:hover{
     from{opacity:1;}
     50%{opacity:.4;}
     to{opacity:1;}
+}
+
+.cta{
+    gap:var(--space-lg);
+    margin:var(--space-md);
+    max-width:var(--max-width);
+    background:var(--color-card);
+    padding:var(--space-lg);
+    border-radius:var(--radius-md);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.cta h2{
+    font-size:clamp(1.5rem, 3vw, 2.2rem);
+    line-height:1.2;
+    letter-spacing:-0.01em;
+}
+.cta p{
+    font-size:clamp(0.9rem, 1.5vw, 1rem);
+    line-height:1.75;
+    max-width:65ch;
+    color:var(--color-text-sub);
+    text-align:center;
+}
+.cta ul{
+    display:flex;
+    gap:var(--space-lg);
+}
+.cta ul li:first-child{
+    display:flex;
+    align-items:center;
+    gap:var(--space-xs);
+    cursor:default;
+}
+.cta ul li{
+    color:var(--color-text-sub);
+    transition:color var(--duration) var(--ease), text-shadow var(--duration) var(--ease);
+}
+.cta ul li:hover{
+    color:var(--color-green);
+    text-shadow:0 0 24px var(--color-green);
+}
+.cta ul li a{
+    display:flex;
+    align-items:center;
+    gap:var(--space-xs);
 }
