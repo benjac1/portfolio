@@ -158,7 +158,7 @@ header nav ul li a:hover{
     display:flex;
     align-items:center;
     font-family:var(--font-display);
-    font-weight:1000;
+    font-weight:900;
 }
 .logo i{
     color:var(--color-green);
@@ -338,10 +338,6 @@ header nav ul li a:hover{
     margin:var(--space-md);
     border-radius:var(--radius-md);
     overflow:hidden;
-    transition:flex var(--duration) var(--ease);
-}
-.project figure:hover{
-    flex:2;
 }
 .project figure img{
     width:100%;
@@ -592,14 +588,65 @@ header nav ul li a:hover{
 }
 .cta ul li{
     color:var(--color-text-sub);
-    transition:color var(--duration) var(--ease), text-shadow var(--duration) var(--ease);
+    transition:color var(--duration) var(--ease);
 }
 .cta ul li:hover{
     color:var(--color-green);
-    text-shadow:0 0 24px var(--color-green);
 }
 .cta ul li a{
     display:flex;
     align-items:center;
     gap:var(--space-xs);
+}
+
+.footer-top{
+    margin-top:var(--space-3xl);
+    border-top:1px solid var(--color-border);
+    display:flex;
+    gap:var(--space-lg);
+    padding:var(--space-xl) var(--space-sm);
+    align-items:center;
+}
+.footer-top div, .footer-top nav{
+    flex:1;
+}
+.footer-top div p:first-child{
+    display:flex;
+    align-items:center;
+    font-family:var(--font-display);
+    font-weight:900;
+    font-size:.8rem;
+}
+.footer-top div p:first-child i{
+    color:var(--color-green);
+    font-size:1.1rem;
+}
+.footer-top div p:last-child{
+    color:var(--color-text-sub);
+    max-width:30ch;
+    font-size:.9rem;
+}
+.footer-top nav p{
+    font-weight:500;
+    margin-bottom:var(--space-xs);
+    font-size:.9rem;
+}
+.footer-top nav ul{
+    display:flex;
+    flex-direction:column;
+}
+.footer-top nav ul li a{
+    font-size:.9rem;
+    color:var(--color-text-sub);
+    transition:color var(--duration) var(--ease);
+}
+.footer-top nav ul li a:hover{
+    color:var(--color-green);
+}
+.footer-bottom{
+    padding:var(--space-md) var(--space-sm);
+    display:flex;
+    justify-content:center;
+    font-size:1rem;
+    color:var(--color-text-sub);
 }
