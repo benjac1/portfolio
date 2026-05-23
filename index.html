@@ -44,20 +44,28 @@
     <style>
     :root{
         color-scheme:dark;
-        --bg:#ffffff;
-        --text:#1e293b;
+        --blur-bg:rgba(255, 255, 255, 0.85);
+        --color-text:#1e293b;
+        --color-text-sub:#0f172a;
+        --color-card:#f1f5f9;
+        --color-bg:#ffffff;
+        --color-github-icon:#4b5563;
     }
 
     @media(prefers-color-scheme:dark){
         :root{
-            --bg:#0d0d0e;
-            --text:#f9fafb;
+            --blur-bg:rgba(13, 13, 14, 0.8);
+            --color-text:#f9fafb;
+            --color-text-sub:#9ca3af;
+            --color-bg:#0d0d0e;
+            --color-card:#161618;
+            --color-github-icon:#cfcfcf;
         }
     }
 
     body{
-        background-color:var(--bg);
-        color:var(--text);
+        background-color:var(--color-bg);
+        color:var(--color-text);
         font-family:'Inter',system-ui, sans-serif;
         display:flex;
         flex-direction:column;

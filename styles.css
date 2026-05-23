@@ -1,12 +1,7 @@
 :root{
-    --blur-bg:rgba(13, 13, 14, 0.8);
-    --color-bg:#0d0d0e;
-    --color-card:#161618;
     --color-green:#10b981;
     --color-green-glow:rgba(16, 185, 129, 0.18);
     --color-green-dim:rgba(16, 185, 129, 0.08);
-    --color-text:#f9fafb;
-    --color-text-sub:#9ca3af;
     --color-border:#27272a;
     --font-display:'Syne',  system-ui, sans-serif;
     --space-xs:0.5rem;
@@ -458,7 +453,7 @@ header nav ul li a:hover{
     color:#F05032;
 }
 .github{
-    color:#cfcfcf;
+    color:var(--color-github-icon);
 }
 .terminal{
     color:#5391FE;
