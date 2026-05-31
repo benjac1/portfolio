@@ -86,14 +86,20 @@
             <a href="/" class="logo" aria-label="Benjadev portfolio - inicio">
                 Benja<i class="fas fa-code" aria-hidden="true"></i>dev
             </a>
-            <nav aria-label="Navegación principal">
-                <ul>
-                    <li><a href="#projects">Trabajo</a></li>
-                    <li><a href="#stack">Stack</a></li>
-                    <li><a href="#mindset">Mentalidad</a></li>
-                </ul>
-            </nav>
-            <a href="#contact" aria-label="ir a sección de contacto">Contacto</a> 
+            <div class="menu-toggle">
+                <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox visually-hidden" aria-hidden="true">
+                <label for="menu-toggle-checkbox" aria-label="Abrir menu de navegación"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></label>
+                <div class="nav-prin">
+                    <nav aria-label="Navegación principal">
+                        <ul>
+                            <li><a href="#projects">Trabajo</a></li>
+                            <li><a href="#stack">Stack</a></li>
+                            <li><a href="#mindset">Mentalidad</a></li>
+                        </ul>
+                    </nav>
+                    <a class="btn btn-contact" href="#cta" aria-label="ir a sección de contacto">Contacto</a>
+                </div>
+            </div>
         </div>
     </header>
     <main id="main-content" tabindex="-1">
@@ -104,7 +110,7 @@
             </h1>
             <p>Transformo diseños en experiencias web de alto rendimiento, optimizadas para motores de búsqueda y accesibles para todos los usuarios. Enfocado en escribir código limpio, escalable y mantenible.</p>
             <div>
-                <a href="#projects" class="btn-1">Ver trabajo</a>
+                <a href="#projects" class="btn">Ver trabajo</a>
                 <a href="https://github.com/benjac1" target="_blank" rel="noopener noreferrer" class="btn-2"><i class="fab fa-github" aria-hidden="true"></i></a>
             </div>
         </section>

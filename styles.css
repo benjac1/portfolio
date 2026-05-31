@@ -106,39 +106,44 @@ header, main, footer{
 }
 
 header{
+    height:80px;
     padding:var(--space-xs) var(--space-sm);
-    position:sticky;
+    position:fixed;
     top:0;
     z-index:100;
     background:var(--blur-bg);
     display:flex;
-    justify-content:center;
 }
-header div{
+header>div{
     display:flex;
     align-items:center;
     justify-content:space-between;
     width:100%;
 }
-header>div>a:first-child{
+.logo{
+    flex:1;
+    display:flex;
+    align-items:center;
+    font-family:var(--font-display);
+    font-weight:900;
     transition:text-shadow var(--duration) var(--ease);
 }
-header>div>a:first-child:hover{
+.logo:hover{
     text-shadow:0 0 24px var(--color-green);
 }
-header>div>a:last-child{
-    font-weight:bold;
-    padding:var(--space-xs) var(--space-sm);
-    background:var(--color-green);
-    color:var(--color-bg);
-    border-radius:var(--radius-sm);
-    transition:transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+.logo i{
+    color:var(--color-green);
+    font-size:1.3rem;
 }
-header>div>a:last-child:hover{
-    transform:translateY(-4px);
-    box-shadow:0 2px 12px var(--color-green);
+.nav-prin{
+    flex:2;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    transition:top var(--duration) var(--ease);
 }
 header nav ul{
+    margin-left:var(--space-sm);
     display:flex;
     gap:var(--space-lg);
 }
@@ -149,15 +154,20 @@ header nav ul li a{
 header nav ul li a:hover{
     color:var(--color-green);
 }
-.logo{
-    display:flex;
-    align-items:center;
-    font-family:var(--font-display);
-    font-weight:900;
+
+
+
+.btn{
+    font-weight:bold;
+    padding:var(--space-xs) var(--space-sm);
+    background:var(--color-green);
+    color:var(--color-bg);
+    border-radius:var(--radius-sm);
+    transition:transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
 }
-.logo i{
-    color:var(--color-green);
-    font-size:1.3rem;
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 2px 12px var(--color-green);
 }
 
 
@@ -193,18 +203,6 @@ header nav ul li a:hover{
     gap:var(--space-lg);
     display:flex;
     align-items:center;
-}
-.hero div a:first-child{
-    font-weight:bold;
-    padding:var(--space-xs) var(--space-sm);
-    background:var(--color-green);
-    color:var(--color-bg);
-    border-radius:var(--radius-sm);
-    transition:transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
-}
-.hero div a:first-child:hover{
-    transform:translateY(-4px);
-    box-shadow:0 2px 12px var(--color-green);
 }
 .hero div a:last-child{
     font-size:1.5rem;
@@ -644,4 +642,63 @@ header nav ul li a:hover{
     justify-content:center;
     font-size:1rem;
     color:var(--color-text-sub);
+}
+
+
+
+@media (max-width:768px){
+    header>div{
+        position:relative;
+    }
+    .nav-prin{
+        flex-direction:column;
+        gap:var(--space-lg);
+        position:absolute;
+        top:-300px;
+        right:40px;
+        background:var(--blur-bg);
+        padding:var(--space-md);
+        border-radius:0 0 var(--radius-md) var(--radius-md);
+    }
+    .nav-prin ul{
+        text-align:right;
+        flex-direction:column;
+    }
+    .menu-toggle label{
+        display:flex;
+    }
+    .menu-toggle{
+        flex:1;
+        justify-content:end;
+    }
+}
+.menu-toggle{
+    display:flex;
+    align-items:center;
+    flex:2;
+}
+.menu-toggle-checkbox:checked ~ .nav-prin{
+    top:72px;
+}
+.menu-toggle-checkbox:checked ~ label span:first-child{
+    transform:rotate(45deg) translateY(5px) translateX(5px);
+}
+.menu-toggle-checkbox:checked ~ label span:nth-child(2){
+    visibility:hidden;
+}
+.menu-toggle-checkbox:checked ~ label span:last-child{
+    transform:rotate(-45deg) translateY(-5px) translateX(5px);
+}
+.menu-toggle label{
+    padding:var(--space-xs);
+    cursor:pointer;
+    flex-direction:column;
+    gap:5px;
+}
+.menu-toggle label span{
+    transition:transform var(--duration) var(--ease);
+    width:24px;
+    height:2px;
+    background:var(--color-text);
+    border-radius:1px;
 }
