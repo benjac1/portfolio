@@ -681,12 +681,19 @@ header nav ul li a:hover{
     .mindset ul{
         grid-template-columns:repeat(1, 1fr);
     }
+    .stack ul{
+        width:100%;
+    }
     .stack ul li{
         flex-direction:column;
         gap:var(--space-lg);
     }
     .stack ul li strong{
         border-right:none;
+    }
+    .stack ul li div{
+        flex-direction:column;
+        align-items:center;
     }
     .cta ul{
         gap:var(--space-xs);
