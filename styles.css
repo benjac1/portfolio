@@ -238,7 +238,7 @@ header nav ul li a:hover{
 .projects{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-    gap:var(--space-lg);
+    gap:var(--space-xl);
 }
 .project{
     display:flex;
