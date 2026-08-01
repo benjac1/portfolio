@@ -449,6 +449,12 @@ header nav ul li a:hover{
 .js{
     color:#F7DF1E;
 }
+.astro{
+    width:1.5rem;
+}
+.react{
+    color:#61DAFB;
+}
 .git{
     color:#F05032;
 }
