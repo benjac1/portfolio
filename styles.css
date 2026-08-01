@@ -236,14 +236,16 @@ header nav ul li a:hover{
 }
 
 .projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
     gap:var(--space-xl);
 }
 .project{
     display:flex;
     background:var(--color-card);
     border-radius:var(--radius-md);
+}
+.projects .project-par figure{
+    order:-1;
+    border-radius:var(--radius-md) 0 0 var(--radius-md);
 }
 .project-container{
     display:flex;
@@ -328,7 +330,7 @@ header nav ul li a:hover{
     font-size:.9rem;
 }
 .project figure{
-    flex:1.2;
+    width:50%;
     border-radius:0 var(--radius-md) var(--radius-md) 0;
     overflow:hidden;
 }
@@ -675,7 +677,9 @@ header nav ul li a:hover{
     .project{
         flex-direction:column;
     }
-    .project figure{
+    .projects .project figure{
+        order:1;
+        width:100%;
         border-radius:0 0 var(--radius-md) var(--radius-md);
     }
     .mindset ul{
@@ -690,10 +694,6 @@ header nav ul li a:hover{
     }
     .stack ul li strong{
         border-right:none;
-    }
-    .stack ul li div{
-        flex-direction:column;
-        align-items:center;
     }
     .cta ul{
         gap:var(--space-xs);
