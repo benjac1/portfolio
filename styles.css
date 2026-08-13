@@ -169,6 +169,16 @@ header nav ul li a:hover{
     transform:translateY(-4px);
     box-shadow:0 2px 12px var(--color-green);
 }
+.btn-cv{
+    border-radius:var(--radius-sm);
+    border:1px solid var(--color-green);
+    padding:var(--space-xs) var(--space-sm);
+    transition:transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+}
+.btn-cv:hover{
+    transform:translateY(-4px);
+    box-shadow:0 2px 12px var(--color-green);
+}
 
 
 
